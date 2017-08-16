@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="shortcut icon" href="img/slot1.png"/>
+        <title>YEE</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2.0">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="css/bar.css" type="text/css" media="screen" />
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery.slotmachine.min.js"></script>
+        <script type="text/javascript" src="js/bar.js"></script>
+
+    </head>
+
+    <!-- ░░░░░░░░░░░░░▄███▄▄▄░░░░░░░
+         ░░░░░░░░░▄▄▄██▀▀▀▀███▄░░░░░
+         ░░░░░░░▄▀▀░░░░░░░░░░░▀█░░░░
+         ░░░░▄▄▀░░░░░░░░░░░░░░░▀█░░░
+         ░░░█░░░░░▀▄░░▄▀░░░░░░░░█░░░
+         ░░░▐██▄░░▀▄▀▀▄▀░░▄██▀░▐▌░░░
+         ░░░█▀█░▀░░░▀▀░░░▀░█▀░░▐▌░░░
+         ░░░█░░▀▐░░░░░░░░▌▀░░░░░█░░░
+         ░░░█░░░░░░░░░░░░░░░░░░░█░░░
+         ░░░░█░░▀▄░░░░▄▀░░░░░░░░█░░░
+         ░░░░█░░░░░░░░░░░▄▄░░░░█░░░░
+         ░░░░░█▀██▀▀▀▀██▀░░░░░░█░░░░
+         ░░░░░█░░▀████▀░░░░░░░█░░░░░m
+         ░░░░░░█░░░░░░░░░░░░▄█░░░░░░
+         ░░░░░░░██░░░░░█▄▄▀▀░█░░░░░░
+         ░░░░░░░░▀▀█▀▀▀▀░░░░░░█░░░░░
+         ░░░░░░░░░█░░░░░░░░░░░░█░░░░ -->
+
+    <body>
+	<button class="btn btn-default" id="mute">
+            <span class="glyphicon glyphicon-volume-up" id="mute-glyph" aria-hidden="true"></span>
+        </button>
+
+        <div id="mainContainer">
+            <div id="chatContainer">
+                <iframe id="chat-frame" class="stream-element" style="border:none; width: 100%;" seamless="seamless" src="https://destiny.gg/embed/chat"></iframe>
+            </div>
+            <div class="line"> 
+                <div class="content container" style="text-align: center">
+                    <div class="row" id="main">
+                        <div class="col-xs-12 col-md-6 col-md-offset-3 machineContainer">
+                            <div id="machine1" class="slotMachine">
+                                <div class="slot slot1"></div>
+                                <div class="slot slot2"></div>
+                                <div class="slot slot3"></div>
+                                <div class="slot slot4"></div>
+                                <div class="slot slot5"></div>
+                                <div class="slot slot6"></div>
+                            </div>
+
+                            <div id="machine2" class="slotMachine">
+                                <div class="slot slot1"></div>
+                                <div class="slot slot2"></div>
+                                <div class="slot slot3"></div>
+                                <div class="slot slot4"></div>
+                                <div class="slot slot5"></div>
+                                <div class="slot slot6"></div>
+                            </div>
+
+                            <div id="machine3" class="slotMachine">
+                                <div class="slot slot1"></div>
+                                <div class="slot slot2"></div>
+                                <div class="slot slot3"></div>
+                                <div class="slot slot4"></div>
+                                <div class="slot slot5"></div>
+                                <div class="slot slot6"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <button class="btn btn-success btn-lg" id="roll">ROLL IT</button>
+                    </div>
+                    <div class="row" id="klappas">
+                        <img class="klappa" src="img/klappa.png">
+                        <img class="klappa" src="img/klappa.png">
+                        <img class="klappa" src="img/klappa.png">
+                        <img class="klappa" src="img/klappa.png">
+                    </div>
+            </div>
+
+            <div id="audioStuff">
+                <audio id="yee_s">
+                    <source src="audio/yee.mp3" type="audio/mpeg">
+                    <source src="audio/yee.ogg" type="audio/ogg">
+                </audio>
+                <audio id="paa_s">
+                    <source src="audio/paa.mp3" type="audio/mpeg">
+                    <source src="audio/paa.ogg" type="audio/ogg">
+                </audio>
+                <audio id="tip_s">
+                    <source src="audio/tip.mp3" type="audio/mpeg">
+                    <source src="audio/tip.ogg" type="audio/ogg">
+                </audio> 
+                <audio id="pepe_s">
+                    <source src="audio/pepe.mp3" type="audio/mpeg">
+                    <source src="audio/pepe.ogg" type="audio/ogg">
+                </audio> 
+                <audio id="bar_s">
+                    <source src="audio/bar.mp3" type="audio/mpeg">
+                    <source src="audio/bar.ogg" type="audio/ogg">
+                </audio>
+                <audio id="aslan_s">
+                    <source src="audio/aslan.mp3" type="audio/mpeg">
+                    <source src="audio/aslan.ogg" type="audio/ogg">
+                </audio>
+                <audio id="bigwin_s">
+                    <source src="audio/bigwin.mp3" type="audio/mpeg">
+                    <source src="audio/bigwin.ogg" type="audio/ogg">
+                </audio>
+            </div>
+        </div>
+	<!-- NSA SWEATSTINY -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-72242130-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>
